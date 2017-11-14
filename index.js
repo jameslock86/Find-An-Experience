@@ -24,15 +24,13 @@ $(document).ready(function() {
 		  src="https://maps.google.com/maps?q=${lat},${lon}&hl=es;z=14&amp;output=embed">
 		 </iframe>
 		 <br />
-		 <small>
+		 <med>
 		   <a
 		    href="https://maps.google.com/maps?q='+data.lat+','+data.lon+'&hl=es;z=14&amp;output=embed"
-		    style="color:#0000FF;text-align:left"
-		    target="_blank"
-		   >
-		     See map bigger
+		    style="color:#0000FF;text-align:float-left"
+		    target="_blank">
 		   </a>
-		 </small>`;
+		 </med>`;
 
 			if (lat !== 0 && lon !== 0) {
 				$('.map').append(mapInput);

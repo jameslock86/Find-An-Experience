@@ -5,6 +5,7 @@
  */
 
 body {
+	background-color: blue;
   padding-top: 54px;
 }
 
@@ -13,3 +14,9 @@ body {
     padding-top: 56px;
   }
 }
+
+.map {
+	width: 200px;
+	height: 400px;
+	background-color: grey;
+	float: left;
