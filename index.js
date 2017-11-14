@@ -27,7 +27,7 @@ $(document).ready(function() {
 		 <med>
 		   <a
 		    href="https://maps.google.com/maps?q='+data.lat+','+data.lon+'&hl=es;z=14&amp;output=embed"
-		    style="color:#0000FF;text-align:float-left"
+		    style="color:#0000FF;"
 		    target="_blank">
 		   </a>
 		 </med>`;

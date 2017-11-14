@@ -1,0 +1,52 @@
+.map {
+	width: 960px;
+	/*height: 400px;*/
+	background-color: black;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.map iframe {
+	margin: 15px 2px 15px 8px;
+}
+.container-Find-an-Experience{
+	background-color: green;
+display: flex;
+	width: 100%;
+
+	/*padding: px;*/
+}
+/*.pic1{
+	display: flex;
+	position: absolute; right: 10px;
+
+}*/
+.Heading-and-picture-shoe{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 100%
+
+}
+.intro{
+	background-color: yellow;
+
+	display: flex;
+	flex-direction: column;
+	margin-right: 40%;
+  height: 100%;
+}
+.serach-part{
+	background-color: purple;
+	display:flex;
+	flex-flow: row nowrap;
+	
+	width:100%;
+}
+.bio-of-me{
+	background-color: red;
+	display: flex;
+	flex-direction: row;
+
+}
