@@ -51,13 +51,13 @@ $(document).ready(function() {
 	function appendMap(response) {
 		console.log('before', response);
 
-		parks.activities[0];
-		parks.activities[1];
+		// parks.activities[0];
+		// parks.activities[1];
 		let some = response.places;
 		var $parks = $('#parks');
 		console.log(some);
 		$.each(some, function(i, parks) {
-			$parks.append('<br><li>city: ' + parks.city + '<li> state:' + parks.state + '<li>name: ' + parks.name + '<li>activity: ' +   '</li><br>');
+			$parks.append('<br><li><h5>city:</h5>'+ parks.city + '<h5> state:</h5>' + parks.state + '<h5>name:</h5>' + parks.name + '  <h5>activity:</h5>' +'</li>');
 			// thingsToDo +
 		});
 		for (let i in response.places) {
@@ -70,7 +70,7 @@ $(document).ready(function() {
 
 			}
 
-			width = '800';
+			width = '1200';
 			height = '400';
 			frameborder = '0';
 			scrolling = 'no';

@@ -1,5 +1,5 @@
 .map {
-  width: 960px;
+  width: 2000;
   /*height: 400px;*/
   background-color: black;
   display: flex;
@@ -45,7 +45,7 @@
   flex-direction: row;
 }
 
-#map_wrapper {
+/*#map_wrapper {
   height: 400px;
   width: 100vh;
 }
@@ -55,9 +55,12 @@
   width: 100%;
   margin: 0;
   padding: 0px;
-}
+}*/
 
 	/*#parks {
 		display:flex;
-    border: solid 1px #333;
+    border: solid 5px #333;
+		height:100%;
+		width:100%;
+		justify-content:;
   }*/
