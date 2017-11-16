@@ -2,13 +2,17 @@ let googlemapdots;
 
 let map;
 
-// function initMap() {
-//
-// 	map = new google.maps.Map(document.getElementById('map'), {
-// 		zoom: 2,
-// 		center: new google.maps.LatLng(2.8, -187.3),
-// 		mapTypeId: 'terrain'
-// 	});
+// window.initMap = function() {
+// 	var map = new google.maps.Map(
+// 		document.getElementById('map_canvas'), {
+// 			center: new google.maps.LatLng(`${lat,lon}`),
+// 			zoom: 10,
+// 			mapTypeId: google.maps.MapTypeId.ROADMAP
+// 		});
+// 	google.maps.event.addDomListener(window, 'load', initialize());
+
+
+
 
 
 $(document).ready(function() {
@@ -45,38 +49,50 @@ $(document).ready(function() {
 	// }
 
 
-
+	// <tbody id="tbody"></tbody>
 	function appendMap(response) {
 		for (let i in response.places) {
-			// console.log(response.places);
+			//console.log(response.places);
+
+			let some = response.places;
+			var $parks= $('#parks');
+
+			$.each(some,function (i, parks) {
+				$parks.append('<br><li>city: '+ parks.city +'<li> state:'+ parks.state +'<li>name: '+ parks.name +'<li>activity: '+ parks.name.multipleMarkers + '</li><br>');
+
+			});
+
 			var lat = response.places[i].lat;
 			var lon = response.places[i].lon;
 			let multipleMarkers = response.places[i].activities;
-			 console.log(multipleMarkers);
 
+			console.log(multipleMarkers);
+			width = '800';
+			height = '400';
+			frameborder = '0';
+			scrolling = 'no';
+			marginheight = '0';
+			marginwidth = '0';
 			var mapInput = `<iframe
-		  width="300"
-		  height="175"
-		  frameborder="0"
-		  scrolling="no"
-		  marginheight="0"
-		  marginwidth="0"
+
 		  src="https://maps.google.com/maps?q=${lat},${lon}&hl=es;z=14&amp;output=embed">
 		 </iframe>
 		 <br />`;
-		 // <med>
-		 //   <a
-		 //    href="https://maps.google.com/maps?q='+data.lat+','+data.lon+'&hl=es;z=14&amp;output=embed"
-		 //    style="color:#0000FF;"
-		 //    target="_blank">
-		 //   </a>
-		 // </med>`;
+			// <med>
+			//  <a
+			//   href="https://maps.google.com/maps?q='+data.lat+','+data.lon+'&hl=es;z=14&amp;output=embed"
+			//    style="color:#0000FF;"
+			//   target="_blank">
+			//  </a>
+			//  </med>`;
 
 			if (lat !== 0 && lon !== 0) {
-				$('.map').append(mapInput);
+				$('.map').append(mapInput, multipleMarkers);
+
+
+
+
 			}
-
-
 		}
 	}
 
@@ -87,7 +103,7 @@ $(document).ready(function() {
 			$('.responses').append(response[i]);
 			//second pass gets you park name
 			for (let q in response[i]) {
-				console.log('the park name is', (response[i][q]).name);
+				//console.log('the park name is', (response[i][q]).name);
 				let name;
 				for (let w in response[i][q]) {
 					let activities;
