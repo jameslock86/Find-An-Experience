@@ -1,59 +1,63 @@
 .map {
-	width: 960px;
-	/*height: 400px;*/
-	background-color: black;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+  width: 960px;
+  /*height: 400px;*/
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
+
 .map iframe {
-	margin: 15px 2px 15px 8px;
+  margin: 15px 2px 15px 8px;
 }
 
-
-.container-Find-an-Experience{
-	background-color: rgb(22, 247, 10);
-display: flex;
-	width: 100%;
+.container-Find-an-Experience {
+  background-color: rgb(22, 247, 10);
+  display: flex;
+  width: 100%;
 }
 
-
-.Heading-and-picture-shoe{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	height: 100%
-
+.Heading-and-picture-shoe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%
 }
-.intro{
-	background-color: yellow;
 
-	display: flex;
-	flex-direction: column;
-	margin-right: 40%;
+.intro {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40%;
   height: 100%;
 }
-.serach-part{
-	background-color: purple;
-	display:flex;
-	flex-flow: row nowrap;
 
-	width:100%;
+.serach-part {
+  background-color: purple;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
 }
-.bio-of-me{
-	background-color: red;
-	display: flex;
-	flex-direction: row;
 
+.bio-of-me {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
 }
 
 #map_wrapper {
-    height: 400px;
-		width: 100vh;
+  height: 400px;
+  width: 100vh;
 }
 
-#map_canvas{
-		height:100%;
-		width: 100%;
-		margin:0;
-		padding:0px;
+#map_canvas {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0px;
+}
+
+	/*#parks {
+		display:flex;
+    border: solid 1px #333;
+  }*/
