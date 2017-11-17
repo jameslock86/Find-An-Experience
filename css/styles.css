@@ -12,7 +12,7 @@
 }
 
 .container-Find-an-Experience {
-  background-color: rgb(22, 247, 10);
+  background-color: rgb(30, 0, 72);
   display: flex;
   width: 100%;
 }
@@ -64,3 +64,15 @@
 		width:100%;
 		justify-content:;
   }*/
+#alienpic{
+	top: 0;
+	height: auto;
+	position: absolute;
+	z-index:1;
+width:100vw;
+}
+.hidden{
+	display: none;
+	visibility: hidden;
+
+}

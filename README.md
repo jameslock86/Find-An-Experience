@@ -34,3 +34,4 @@ Have you ever went on a vacation or visited a new city for the weekend and wante
 7. HTML
 8. CSS
 9. Node
+10. Animate.css

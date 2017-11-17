@@ -57,7 +57,7 @@ $(document).ready(function() {
 		var $parks = $('#parks');
 		console.log(some);
 		$.each(some, function(i, parks) {
-			$parks.append('<br><li><h5>city:</h5>'+ parks.city + '<h5> state:</h5>' + parks.state + '<h5>name:</h5>' + parks.name + '  <h5>activity:</h5>' +'</li>');
+			$parks.append('<br><li><h5>city:</h5>' + parks.city + '<h5> state:</h5>' + parks.state + '<h5>name:</h5>' + parks.name + '  <h5>activity:</h5>' + '</li>');
 			// thingsToDo +
 		});
 		for (let i in response.places) {
@@ -135,7 +135,7 @@ $(document).ready(function() {
 				console.log('error: ', error);
 			});
 	}
-	//this is where the click gets you the city to populte
+	//this is where the click gets you the city and state to populate
 	$('#findCity').click(function(e) {
 		e.preventDefault();
 		let city;
@@ -144,4 +144,10 @@ $(document).ready(function() {
 		state = $('#find-state').val();
 		getCityState(city, state);
 	});
+	$('.clickMe').click(function(e) {
+		e.preventDefault();
+		console.log('hello');
+		$('#alienpic').toggleClass('hidden').toggleClass('animated').toggleClass('fadeInRight');
+	});
+// $( "div.tumble" ).toggleClass( "bounce" )
 });
