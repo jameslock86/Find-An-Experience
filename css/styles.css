@@ -1,7 +1,7 @@
 .map {
   width: 2000;
   /*height: 400px;*/
-  background-color: black;
+  background-color: rgb(173, 0, 91);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -33,7 +33,7 @@
 }
 
 .serach-part {
-  background-color: purple;
+  background-color: rgb(110, 0, 72);
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
@@ -45,25 +45,6 @@
   flex-direction: row;
 }
 
-/*#map_wrapper {
-  height: 400px;
-  width: 100vh;
-}
-
-#map_canvas {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0px;
-}*/
-
-	/*#parks {
-		display:flex;
-    border: solid 5px #333;
-		height:100%;
-		width:100%;
-		justify-content:;
-  }*/
 #alienpic{
 	top: 0;
 	height: auto;
@@ -75,4 +56,23 @@ width:100vw;
 	display: none;
 	visibility: hidden;
 
+}
+.reload{
+	left:0;
+	margin-right:10px;
+	right:0;
+	background-color: rgb(173, 0, 91);
+}
+.clickMe{
+		background-color: rgb(110, 0, 72);
+
+}
+.bio-of-me{
+	background-color: rgb(255,125,6);
+}
+.card-body{
+	background-color: rgb(225,87,0);
+}
+.card-text{
+	color: white;
 }
